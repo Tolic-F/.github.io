@@ -1,0 +1,115 @@
+a { text-decoration: none;}
+
+mark { 
+background-color: #1976d2;
+                color: #fff;
+                padding: 2px;
+                border-radius: 4px;
+line-height: 1.5;}
+
+
+.badge {
+  background: #ffcc00; //yellow; //linear-gradient(orange, red);
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  //margin: 5px 20px;
+  font-size: 16pt;
+  //padding: 15px;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  //color: #fff;
+}
+
+hr {
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #737373;
+}
+
+/* Ripple effect 
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}*/
+
+
+details {
+border: 1px solid #999;
+border-radius: 4px;
+margin: 10px 0px;
+//padding: 1.04%;
+box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+}
+
+summary {
+outline: none;
+border-radius: 3px;
+margin: 0;
+padding: 8px 10px;
+background: -webkit-linear-gradient(top, #f3f3f3 50%, #e6e6e6 50%);
+}
+
+summary::-webkit-details-marker {
+display: none;
+}
+
+summary:after {
+ //  content: "▼";
+//    color: black;
+    float: right;
+//    width: 40px;
+   // font-weight: bold;
+
+
+//  display: inline-block;
+  width: 18px;
+  height: 18px;
+//  margin-right: 8px;
+  content: "";
+  background-image: url(baseline-keyboard_arrow_down-24px.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+content-box content-box;
+}
+
+details[open] summary:after {
+    //content: "▲";
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+//  margin-right: 8px;
+  content: "";
+  background-image: url(baseline-keyboard_arrow_up-24px.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+
+
+
+details {
+  overflow: hidden;
+ // padding: 1em 1em 0;
+}
+details[open] {
+  animation: spoiler 0.5s;
+}
+
+
+@keyframes spoiler {
+  0%   {max-height: 40;}
+  100% {max-height: 50em;}
+}
